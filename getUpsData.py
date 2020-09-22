@@ -27,7 +27,7 @@ for line in p.stdout.readlines(): #read and store result in log file
     stringify = False
     if key in string_measurements:
         stringify = True
-    else
+    else:
         try:
             val = int(value)
         except ValueError:
