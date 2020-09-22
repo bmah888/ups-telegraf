@@ -1,10 +1,16 @@
 #! /usr/bin/env python
 
+import sys
 import subprocess
 
-ups_name="study"
+ups_name="ups" # default value
 upsc_command="upsc"
 measurement_name="ups"
+
+# Command-line parsing.  There is one optional argument, the name of
+# the UPS to query.
+if len(sys.argv) > 1:
+    ups_name=sys.argv[1]
 
 cmd=upsc_command + " " + ups_name
 
