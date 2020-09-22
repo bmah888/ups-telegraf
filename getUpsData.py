@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 import subprocess
 
 cmd="upsc ups"
@@ -23,3 +25,4 @@ for line in p.stdout.readlines(): #read and store result in log file
 
 output = "ups " + output.rstrip()
 print(output, end='')
+
