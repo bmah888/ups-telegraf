@@ -5,9 +5,8 @@ import subprocess
 cmd="upsc ups"
 output=""
 string_measurements=["battery.mfr.date", "battery.type", "device.mfr", "device.model","device.serial","device.type",
-			"driver.name", "driver.paramter.port", "driver.parameter.synchronous", "driver.version", "driver.version.data",
-			"ups.beeper.status", "ups.mfr","ups.model", "ups.serial", "ups.status", "ups.test.result", "driver.parameter.port",
-			"driver.parameter.syncronous"]
+			"driver.name", "driver.parameter.port", "driver.parameter.synchronous", "driver.version", "driver.version.data",
+			"ups.beeper.status", "ups.mfr","ups.model", "ups.serial", "ups.status", "ups.test.result"]
 
 p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
 
